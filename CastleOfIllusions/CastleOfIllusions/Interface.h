@@ -6,6 +6,9 @@
 #include <vector>
 #include <string>
 
+#include <irrKlang.h>
+using namespace irrklang;
+
 #include "ShaderProgram.h"
 #include "Quad.h"
 #include "TexturedQuad.h"
@@ -81,7 +84,7 @@ public:
 
     bool isForestMap;
 
-private:
+private: 
     void updateCam(int deltaTime);
 
     glm::vec2 cameraPos = glm::vec2(0.f, 0.f);

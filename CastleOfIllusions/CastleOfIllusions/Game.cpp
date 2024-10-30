@@ -68,7 +68,7 @@ void Game::keyPressed(int key)
 
 			if (selectedOption == 0)
 			{
-				gameScreen = new GameScene(true);
+				gameScreen = new GameScene(true); 
 				glClearColor(0.0f, 0.67f, 1.0f, 1.0f);
 				currentScreen = gameScreen;
 				engine->stopAllSounds();

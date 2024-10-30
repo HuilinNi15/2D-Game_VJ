@@ -4,6 +4,8 @@
 #include <string>
 #include <iomanip>
 #include <sstream>
+#include <irrKlang.h>
+using namespace irrklang;
 
 #pragma once
 #include "Sprite.h"
@@ -67,6 +69,8 @@ public:
 		oss << std::setw(6) << std::setfill('0') << score;  // Pads with '0' to a width of 6
 		return oss.str();
 	}
+
+	ISoundEngine* engine = createIrrKlangDevice();
 
 protected:
 	bool isActive = true;
